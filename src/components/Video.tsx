@@ -7,10 +7,15 @@ type VideoTypes = {
     className?: string
 }
 
-const Video = ({path, className}: VideoTypes ) => {
+const Video = ({ path, className }: VideoTypes) => {
     return (
-        <IKVideo controls urlEndpoint={urlEndpoint}  path={path} className={className} transformation={[{ width: "1920", height: "1080", q: "90" }]} />
+        <IKVideo controls urlEndpoint={urlEndpoint} path={path} className={className}
+            transformation={[
+                { width: "1920", height: "1080", q: "90" },
+            ]}
+        />
     )
+
 }
 
 export default Video
