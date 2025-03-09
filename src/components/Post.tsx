@@ -25,7 +25,7 @@ const Post = async ({ type }: { type?: "status" | "comment" }) => {
         })
     }
 
-    const fileDetails = await getFileDetails("67c6c337432c476416814db1");
+    const fileDetails = await getFileDetails("67cd1b8d432c476416b82dd2");
 
 
 
@@ -47,10 +47,10 @@ const Post = async ({ type }: { type?: "status" | "comment" }) => {
 
                 {/* Avatar */}
 
-                <div className={`${type === "status" && "hidden"}relative w-10 h-10 rounded-full overflow-hidden cursor-pointer`}>
-                    <Link href={`/test}`}>
-                        <Image path='general/avatar.png' alt="avatar" w={100} h={100} tr={true} />
-                    </Link>
+                <div className={`${type === "status" && "hidden"} relative w-10 h-10 rounded-full overflow-hidden cursor-pointer`}>
+
+                    <Image path='general/avatar.png' alt="avatar" w={100} h={100} tr={true} />
+
                 </div>
 
                 {/* Content */}
@@ -60,12 +60,12 @@ const Post = async ({ type }: { type?: "status" | "comment" }) => {
                     <div className="w-full flex justify-between">
 
                         <Link href={'/AyushPanwar'} className="flex gap-4">
-                            <div className={`${type !== "status" && "hidden"}relative w-10 h-10 rounded-full overflow-hidden cursor-pointer`}>
-                                <Link href={`/test}`}>
-                                    <Image path='general/avatar.png' alt="avatar" w={100} h={100} tr={true} />
-                                </Link>
+                            <div className={`${type !== "status" && "hidden"} relative w-10 h-10 rounded-full overflow-hidden cursor-pointer`}>
+
+                                <Image path='general/avatar.png' alt="avatar" w={100} h={100} tr={true} />
+
                             </div>
-                            <div className={`flex items-center gap-2 flex-wrap ${type === "status" && "flex-col gap-0 !items-start"}`}>
+                            <div className={`flex items-center gap-2 flex-wrap ${type === "status" && " flex-col gap-0 !items-start"}`}>
                                 <h1 className="text-md font-bold">Ayush Panwar</h1>
                                 <span className="text-textGray text-sm">@AyushPanwar</span>
 
